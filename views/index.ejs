@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> <%= title %> </title>
+        <link rel="stylesheet" href="/index.css">
+    </head>
+    <body>
+        <h1> <%= title %> </h1>
+
+        <% messages.forEach((message) => { %>
+            <div class="message-box">
+                <p><%= message.text %></p>
+                <p><%= message.user %></p>
+                <p><%= message.added %></p>
+            </div>
+        <% }) %> 
+
+        <a href="./new">Add New Message</a>
+    </body>
+</html>
