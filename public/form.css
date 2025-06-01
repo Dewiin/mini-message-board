@@ -1,0 +1,8 @@
+.new-form > * {
+    display: block;
+}
+
+#messageText {
+    width: 20rem;
+    height: 10rem;
+}
