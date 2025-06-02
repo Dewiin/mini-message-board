@@ -26,14 +26,29 @@
     cursor: pointer;
 }
 
+.messages-container {
+    margin: 0 20vw; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .message-box {
     padding: 0 1rem;
     border: 1px solid;
     border-radius: 20px;
-    max-width: 20rem;
+    max-width: 10rem;
     height: fit-content;
-    max-height: 20rem;
+    max-height: 10rem;
     overflow: scroll;
+    transition: 500ms ease;
+    flex: 0 1 7rem;
+}
+
+.message-box:hover {
+    cursor: pointer;
+    flex: 1 1 8rem;
 }
 
 .message-box > p {
@@ -46,12 +61,4 @@
 
 .message-box p:nth-child(2){
     font-size: 0.8rem;
-}
-
-.messages-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    
 }

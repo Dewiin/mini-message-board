@@ -39,6 +39,9 @@ app.post("/new", (req, res) => {
 
     res.redirect("/")
 })
+app.get("/open", (req, res) => {
+    res.render("open", {title: "Message Details"});
+})
 
 // assets
 const assetsPath = path.join(__dirname, "public");
