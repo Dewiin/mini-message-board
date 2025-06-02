@@ -6,3 +6,7 @@
     width: 20rem;
     height: 10rem;
 }
+
+textarea {
+    resize: none;
+}

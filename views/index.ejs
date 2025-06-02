@@ -4,16 +4,20 @@
         <link rel="stylesheet" href="/index.css">
     </head>
     <body>
-        <h1> <%= title %> </h1>
+        <div class="title-card">
+            <h1> <%= title %> </h1>
+            <a href="./new">
+                <button class="add-message-button">+</button>
+            </a>
+        </div>
 
-        <% messages.forEach((message) => { %>
-            <div class="message-box">
-                <p><%= message.text %></p>
-                <p><%= message.user %></p>
-                <p><%= message.added %></p>
-            </div>
-        <% }) %> 
-
-        <a href="./new">Add New Message</a>
+        <div class="messages-container">
+            <% messages.forEach((message) => { %>
+                <div class="message-box">
+                    <p><%= message.text %></p>
+                    <p><b><%= message.user %></b></p>
+                </div>
+            <% }) %> 
+        </div>
     </body>
 </html>

@@ -1,9 +1,9 @@
 <form class="new-form" method="POST" action="/new">
     <label for="messageText">Message: </label>
-    <textarea id="messageText" name="messageText" placeholder="This is my message..."></textarea>
+    <textarea id="messageText" name="messageText" placeholder="This is my message..." maxlength="250" required></textarea>
 
     <label for="messageUser">User: </label>
-    <input type="text" id="messageUser" name="messageUser" placeholder="Dewiin">
+    <input type="text" id="messageUser" name="messageUser" placeholder="Dewiin" required >
 
     <button type="submit">Submit</button>
 </form>
