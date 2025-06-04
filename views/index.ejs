@@ -17,8 +17,8 @@
         </div>
 
         <div class="messages-container">
-            <% messages.forEach((message) => { %>
-                <div onclick="window.location.href = './open'" class="message-box">
+            <% messages.forEach((message, index) => { %>
+                <div onclick="window.location.href = './open/<%=index%>'" class="message-box">
                     <p><%= message.text %></p>
                     <p><b><%= message.user %></b></p>
                 </div>
