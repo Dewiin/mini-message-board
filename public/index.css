@@ -9,21 +9,26 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     margin: 0;
+}
+
+#parallax-bg {
+    position: absolute;
+    top: -3%;
+    left: -3%;
+    height: 105%;
+    width: 105%;
     background: url("/notes-bg.jpg") no-repeat top;
     background-size: cover;
-    backdrop-filter: blur(5px);
+    filter: blur(3px);
+    z-index: -1;
 }
 
 .title-card {
     text-align: center;
     padding: var(--title-padding);
-}
-
-.title-card > h1 {
-    margin: 0 0 1rem;
 }
 
 .add-message-button {

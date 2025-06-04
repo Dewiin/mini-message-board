@@ -1,6 +1,14 @@
-.form-title {
+.form-title-card {
     text-align: center;
     padding: var(--title-padding);
+    margin: 0;
+}
+
+.form-title-card > a {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 900;
+    
 }
 
 .new-form {

@@ -2,8 +2,13 @@
     <head>
         <title> <%= title %> </title>
         <link rel="stylesheet" href="/index.css">
+        <script type="module" defer>
+            import { parallaxBg } from "/modules/parallaxBg.js";
+            parallaxBg();
+        </script>
     </head>
     <body>
+        <div id="parallax-bg"></div>
         <div class="title-card">
             <h1> <%= title %> </h1>
             <a href="./new">

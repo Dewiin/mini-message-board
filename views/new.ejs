@@ -3,9 +3,17 @@
         <title> <%= title %> </title>
         <link rel="stylesheet" href="/form.css">
         <link rel="stylesheet" href="/index.css">
+        <script type="module" defer>
+            import { parallaxBg } from "/modules/parallaxBg.js"
+            parallaxBg();
+        </script>
     </head>
     <body>
-        <h1 class="form-title"> <%= title %> </h1>
+        <div id="parallax-bg"></div>
+        <div class="form-title-card">
+            <h1> <%= title %> </h1>
+            <a href="/">←</a>
+        </div>
 
         <%- include("form") %>
     </body>
