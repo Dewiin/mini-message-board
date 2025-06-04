@@ -1,12 +1,40 @@
+.form-title {
+    text-align: center;
+    padding: var(--title-padding);
+}
+
+.new-form {
+    width: fit-content;
+    margin: 5vh auto;
+}
+
 .new-form > * {
+    border-radius: 10px;
+    text-align: center;
     display: block;
 }
 
+.new-form > label {
+    font-weight: 900;
+}
+
 #messageText {
+    border: 1px solid;
     width: 20rem;
     height: 10rem;
 }
 
-textarea {
+.new-form > textarea {
     resize: none;
+}
+
+#messageUser {
+    border: 1px solid;
+    margin: auto;
+}
+
+.new-form > button {
+    font-weight: 900;
+    padding: 0.25rem 1rem;
+    margin: 1rem auto;
 }

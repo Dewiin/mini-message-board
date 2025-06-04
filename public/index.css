@@ -1,23 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+:root {
+    --title-padding: 2rem;
+}
+
 * {
     font-family: "Indie Flower", cursive;
 }
 
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background: url("/notes-bg.jpg") no-repeat top;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
 .title-card {
     text-align: center;
-    margin: 2rem;
+    padding: var(--title-padding);
 }
 
 .title-card > h1 {
-    margin-bottom: 1rem;
+    margin: 0 0 1rem;
 }
 
 .add-message-button {
     padding: 0 2rem;
     font-size: 16px;
     border-radius: 20px;
-    border: none;
+    border: 1px solid;
     transition: transform 200ms;
 }
 
@@ -35,6 +48,7 @@
 }
 
 .message-box {
+    background-color: white;
     padding: 0 1rem;
     border: 1px solid;
     border-radius: 20px;
