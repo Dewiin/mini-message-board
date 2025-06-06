@@ -1,16 +1,20 @@
 {
-  "name": "mini-message-board",
-  "version": "1.0.0",
-  "description": "Mini Message Board project via The Odin Project curriculum",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
-  },
-  "author": "Dewiin",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^5.1.0"
-  }
+	"name": "mini-message-board",
+	"version": "1.0.0",
+	"description": "Mini Message Board project via The Odin Project curriculum",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "node --watch index.js",
+		"format": "prettier --write ."
+	},
+	"author": "Dewiin",
+	"license": "ISC",
+	"dependencies": {
+		"ejs": "^3.1.10",
+		"express": "^5.1.0"
+	},
+	"devDependencies": {
+		"prettier": "^3.5.3"
+	}
 }

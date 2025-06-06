@@ -1,83 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 :root {
-    --title-padding: 2rem;
+	--title-padding: 2rem;
 }
 
 * {
-    font-family: "Indie Flower", cursive;
+	font-family: 'Indie Flower', cursive;
 }
 
 body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
 }
 
 #parallax-bg {
-    position: absolute;
-    top: -3%;
-    left: -3%;
-    height: 105%;
-    width: 105%;
-    background: url("/notes-bg.jpg") no-repeat top;
-    background-size: cover;
-    filter: blur(3px);
-    z-index: -1;
+	position: absolute;
+	top: -3%;
+	left: -3%;
+	height: 105%;
+	width: 105%;
+	background: url('/notes-bg.jpg') no-repeat top;
+	background-size: cover;
+	filter: blur(3px);
+	z-index: -1;
 }
 
 .title-card {
-    text-align: center;
-    padding: var(--title-padding);
+	text-align: center;
+	padding: var(--title-padding);
 }
 
 .add-message-button {
-    padding: 0 2rem;
-    font-size: 16px;
-    border-radius: 20px;
-    border: 1px solid;
-    transition: transform 200ms;
+	padding: 0 2rem;
+	font-size: 16px;
+	border-radius: 20px;
+	border: 1px solid;
+	transition: transform 200ms;
 }
 
 .add-message-button:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+	transform: scale(1.2);
+	cursor: pointer;
 }
 
 .messages-container {
-    margin: 0 20vw; 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+	margin: 0 20vw;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 .message-box {
-    background-color: white;
-    padding: 0 1rem;
-    border: 1px solid;
-    border-radius: 20px;
-    max-width: 10rem;
-    height: fit-content;
-    max-height: 10rem;
-    overflow: scroll;
-    transition: 500ms ease;
-    flex: 0 1 7rem;
+	background-color: white;
+	padding: 0 1rem;
+	border: 1px solid;
+	border-radius: 20px;
+	max-width: 10rem;
+	height: fit-content;
+	max-height: 10rem;
+	overflow: scroll;
+	transition: 500ms ease;
+	flex: 0 1 7rem;
 }
 
 .message-box:hover {
-    cursor: pointer;
-    flex: 1 1 8rem;
+	cursor: pointer;
+	flex: 1 1 8rem;
 }
 
 .message-box > p {
-    overflow-wrap: anywhere;
+	overflow-wrap: anywhere;
 }
 
-.message-box p:first-child{
-    font-size: 1.2rem;
+.message-box p:first-child {
+	font-size: 1.2rem;
 }
 
-.message-box p:nth-child(2){
-    font-size: 0.8rem;
+.message-box p:nth-child(2) {
+	font-size: 0.8rem;
 }

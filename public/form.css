@@ -1,48 +1,47 @@
 .form-title-card {
-    text-align: center;
-    padding: var(--title-padding);
-    margin: 0;
+	text-align: center;
+	padding: var(--title-padding);
+	margin: 0;
 }
 
 .form-title-card > a {
-    text-decoration: none;
-    font-size: 32px;
-    font-weight: 900;
-    
+	text-decoration: none;
+	font-size: 32px;
+	font-weight: 900;
 }
 
 .new-form {
-    width: fit-content;
-    margin: 5vh auto;
+	width: fit-content;
+	margin: 5vh auto;
 }
 
 .new-form > * {
-    border-radius: 10px;
-    text-align: center;
-    display: block;
+	border-radius: 10px;
+	text-align: center;
+	display: block;
 }
 
 .new-form > label {
-    font-weight: 900;
+	font-weight: 900;
 }
 
 #messageText {
-    border: 1px solid;
-    width: 20rem;
-    height: 10rem;
+	border: 1px solid;
+	width: 20rem;
+	height: 10rem;
 }
 
 .new-form > textarea {
-    resize: none;
+	resize: none;
 }
 
 #messageUser {
-    border: 1px solid;
-    margin: auto;
+	border: 1px solid;
+	margin: auto;
 }
 
 .new-form > button {
-    font-weight: 900;
-    padding: 0.25rem 1rem;
-    margin: 1rem auto;
+	font-weight: 900;
+	padding: 0.25rem 1rem;
+	margin: 1rem auto;
 }
