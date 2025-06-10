@@ -2,14 +2,14 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-const usersRouter = require("./routes/usersRouter");
+const usersRouter = require('./routes/usersRouter');
 
 app.use(express.urlencoded({ extended: true }));
 
 // routes
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use("/", usersRouter);
+app.use('/', usersRouter);
 
 // assets
 const assetsPath = path.join(__dirname, 'public');
