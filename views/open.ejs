@@ -16,6 +16,7 @@
         </div>
 
         <div class="message-details-container">
+            <a class="remove-message-button" href="/delete/<%= message.id %>">✖</a>
             <p><b>Text:</b> <%= message.text %></p>
             <p><b>User:</b> <%= message.username %></p>
             <p><b>Date added:</b> <%= message.added %></p>

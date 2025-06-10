@@ -18,3 +18,11 @@
 	border: 1px solid;
 	border-radius: 10px;
 }
+
+.remove-message-button {
+	display: block;
+	text-decoration: none;
+	color: red;
+	text-align: right;
+	width: 100%;
+}

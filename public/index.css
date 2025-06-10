@@ -63,6 +63,8 @@ body {
 	overflow: scroll;
 	transition: 500ms ease;
 	flex: 0 1 7rem;
+	text-decoration: none;
+	color: black;
 }
 
 .message-box:hover {

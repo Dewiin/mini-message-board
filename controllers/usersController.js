@@ -26,9 +26,18 @@ async function usersOpenGet(req, res) {
   res.render("open", {title: "Message Details", message: message});
 }
 
+async function usersDeleteGet(req, res) {
+  const messageID = parseInt(req.params.id);
+
+  await db.deleteMessage(messageID);
+
+  res.redirect("/");
+}
+
 module.exports = {
   usersListGet,
   usersCreateGet,
   usersCreatePost,
-  usersOpenGet
+  usersOpenGet,
+  usersDeleteGet
 }

@@ -14,8 +14,13 @@ async function findMessage( id ) {
   return rows[0];
 }
 
+async function deleteMessage( id ) {
+  await pool.query("DELETE FROM messages WHERE id = $1", [id]);
+}
+
 module.exports = {
   getAllMessages,
   insertMessage,
-  findMessage
+  findMessage,
+  deleteMessage
 };

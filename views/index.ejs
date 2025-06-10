@@ -18,10 +18,10 @@
 
         <div class="messages-container">
             <% messages.forEach((message, index) => { %>
-                <div onclick="window.location.href = './open/<%=message.id%>'" class="message-box">
+                <a href="./open/<%= message.id %>" class="message-box">
                     <p><%= message.text %></p>
                     <p><b><%= message.username %></b></p>
-                </div>
+                </a>
             <% }) %> 
         </div>
     </body>
