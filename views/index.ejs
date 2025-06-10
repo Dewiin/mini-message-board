@@ -20,7 +20,7 @@
             <% messages.forEach((message, index) => { %>
                 <div onclick="window.location.href = './open/<%=index%>'" class="message-box">
                     <p><%= message.text %></p>
-                    <p><b><%= message.user %></b></p>
+                    <p><b><%= message.username %></b></p>
                 </div>
             <% }) %> 
         </div>

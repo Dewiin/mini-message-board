@@ -3,47 +3,50 @@ const path = require('path');
 
 const app = express();
 
-// sample messages
-const messages = [
-	{
-		text: 'Hi there!',
-		user: 'Amando',
-		added: new Date(),
-	},
-	{
-		text: 'Hello World!',
-		user: 'Charles',
-		added: new Date(),
-	},
-];
+const usersRouter = require("./routes/usersRouter");
+
+// // sample messages
+// const messages = [
+// 	{
+// 		text: 'Hi there!',
+// 		user: 'Amando',
+// 		added: new Date(),
+// 	},
+// 	{
+// 		text: 'Hello World!',
+// 		user: 'Charles',
+// 		added: new Date(),
+// 	},
+// ];
 
 app.use(express.urlencoded({ extended: true }));
 
 // routes
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+app.use("/", usersRouter);
 
-app.get('/', (req, res) => {
-	res.render('index', { title: 'Mini Messageboard', messages: messages });
-});
-app.get('/new', (req, res) => {
-	res.render('new', { title: 'Create New Message' });
-});
-app.post('/new', (req, res) => {
-	console.log('new message added!');
+// app.get('/', (req, res) => {
+// 	res.render('index', { title: 'Mini Messageboard', messages: messages });
+// });
+// app.get('/new', (req, res) => {
+// 	res.render('new', { title: 'Create New Message' });
+// });
+// app.post('/new', (req, res) => {
+// 	console.log('new message added!');
 
-	const messageText = req.body.messageText;
-	const messageUser = req.body.messageUser;
+// 	const messageText = req.body.messageText;
+// 	const messageUser = req.body.messageUser;
 
-	messages.push({ text: messageText, user: messageUser, added: new Date() });
+// 	messages.push({ text: messageText, user: messageUser, added: new Date() });
 
-	res.redirect('/');
-});
-app.get('/open/:id', (req, res) => {
-	const messageID = parseInt(req.params.id);
-	const message = messages[messageID];
-	res.render('open', { title: 'Message Details', message: message });
-});
+// 	res.redirect('/');
+// });
+// app.get('/open/:id', (req, res) => {
+// 	const messageID = parseInt(req.params.id);
+// 	const message = messages[messageID];
+// 	res.render('open', { title: 'Message Details', message: message });
+// });
 
 // assets
 const assetsPath = path.join(__dirname, 'public');
