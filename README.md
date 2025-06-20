@@ -58,7 +58,7 @@ A simple Node.js + Express application where users can post short messages and v
 
 ## Getting Started
 
-To get a local copy of Blind Spot up and running locally follow these steps:
+To get a local copy of this repository up and running locally follow these steps:
 
 ### Prerequisites
 
